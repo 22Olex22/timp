@@ -7,6 +7,8 @@ struct fun
 	double *x;
 	double *y;
 };
+fun trig(double a, double b, double c, double f);
+void out(fun &r, double f);
 int main()
 {
 	double a, b, c;
@@ -18,4 +20,6 @@ int main()
 	r = trig(a, b, c, f);
 	out(r, f);
 	return 0;
-}	
+}
+fun tring(double a, double b, double c, double f)
+{
