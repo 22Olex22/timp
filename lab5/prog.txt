@@ -1,6 +1,12 @@
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 using namespace std;
+struct fun
+{
+	double *x;
+	double *y;
+};
 int main()
 {
 	double a, b, c;
@@ -9,5 +15,7 @@ int main()
 	double f;
 	f = (b - a) / c;
 	fun r;
+	r = trig(a, b, c, f);
+	out(r, f);
 	return 0;
 }	
