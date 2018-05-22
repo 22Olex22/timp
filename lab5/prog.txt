@@ -1,0 +1,13 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	double a, b, c;
+	cout<<"Enter limits and step:"<<endl;
+	cin >> a >> c >> b;
+	double f;
+	f = (b - a) / c;
+	fun r;
+	return 0;
+}	
