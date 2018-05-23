@@ -20,13 +20,13 @@ int main()
 	r = trig(a, b, c, f);
 	out(r, f);
 	return 0;
-}
+}	
 fun trig(double a, double b, double c, double f)
 {
 	fun _r;
-	_r.x = double[f];
-	_r.y = double[f];
-	for (int i = 0; i < f; i++)
+	_r.x = new double[f];
+	_r.y = new double[f];
+	for (int i = 0; i < f + 1; i++)
 	{
 		_r.x[i] = a;
 		_r.y[i] = (a-2)*(a-2)*(a-2)-(a*(3+(a-3)*(a-3)-10));
@@ -38,8 +38,9 @@ void out(fun &r, double f)
 {
 	cout << endl;
 	cout << "____________" <<endl;
-	for (int i = 0; i < f; i++)
+	cout<< endl;
+	for (int i = 0; i < f + 1; i++)
 	{
-		cout <<r.x[i]<< " = " << r.y[i] << endl;
+		cout << "y(" << r.x[i]<< ") = " << r.y[i] << endl;
 	}
 }
