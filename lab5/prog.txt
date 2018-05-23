@@ -21,5 +21,25 @@ int main()
 	out(r, f);
 	return 0;
 }
-fun tring(double a, double b, double c, double f)
+fun trig(double a, double b, double c, double f)
 {
+	fun _r;
+	_r.x = double[f];
+	_r.y = double[f];
+	for (int i = 0; i < f; i++)
+	{
+		_r.x[i] = a;
+		_r.y[i] = (a-2)*(a-2)*(a-2)-(a*(3+(a-3)*(a-3)-10));
+		a = a + c;
+	}
+	return _r;
+}
+void out(fun &r, double f)
+{
+	cout << endl;
+	cout << "____________" <<endl;
+	for (int i = 0; i < f; i++)
+	{
+		cout <<r.x[i]<< " = " << r.y[i] << endl;
+	}
+}
